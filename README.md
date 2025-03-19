@@ -21,3 +21,5 @@ def main() -> None:
 if __name__ == "__main__":
     main()
 ```
+
+![image](https://github.com/user-attachments/assets/7e4d2d13-aa95-4bad-bfb7-a0efda2e3443)
