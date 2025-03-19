@@ -1,4 +1,6 @@
+# made 4 auto**** api
 # made by pinpin
+# usage: python export.py CONTAINER.csv
 from __future__ import annotations
 from   typing   import Optional
 
@@ -93,10 +95,8 @@ def main() -> None:
     converter = Export()
     # load csv
     converter.load_csv()
-    # get a clean dataframe
-    df = converter.clean()
-    # export dataframe
-    converter.export(df)
+    # get a clean dataframe & export it
+    converter.export(converter.clean())
     # debugging
     logging.info("[*] CSV successfully exported to %s [*]", converter.db_file)
 
